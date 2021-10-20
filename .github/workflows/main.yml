@@ -25,8 +25,7 @@ jobs:
       - run: echo "${ProjectPath}"
       - run: env
       - name: Set path
-        with:
-          path: "${ProjectPath}"
+        run: echo "$PATH:$ProjectPath >> $PATH
       - name: Run create
         run: create test-project
       - run: env
