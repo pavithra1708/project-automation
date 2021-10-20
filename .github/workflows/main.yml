@@ -22,6 +22,8 @@ jobs:
       - name: Install requirements
         run: pip install -r requirements.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "${ProjectPath}"
+      - run: echo "${PATH}"
       - name: Run create
         run: create test-project
       - run: ls "${ProjectPath}"
