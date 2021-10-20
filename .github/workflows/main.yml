@@ -26,6 +26,6 @@ jobs:
       - run: env
       - name: Set path
         run: echo "PATH=$PATH:$ProjectPath" >> $GITHUB_ENV
+      - run: env
       - name: Run create
         run: create test-project
-      - run: env
