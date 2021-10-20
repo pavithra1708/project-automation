@@ -10,6 +10,7 @@ jobs:
       - run: echo "${ProjectPath}"
       - name: Check out repository code
         uses: actions/checkout@v2
+      - run: ls "${ProjectPath}"
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Install python in the run
