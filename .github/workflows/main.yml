@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 on: push
 jobs:
   Python-Automation:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     env:
       ProjectPath: ${{ github.workspace }}
       GitToken: ${{ secrets.ACCESS_TOKEN }}
