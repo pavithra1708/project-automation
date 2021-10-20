@@ -23,5 +23,6 @@ jobs:
         run: pip install -r requirements.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Set Path env variable
-        run: export PATH=${{ github.workspace }}
+        env:
+          PATH: ${{ github.workspace }}
       - run: echo "${PATH}"
