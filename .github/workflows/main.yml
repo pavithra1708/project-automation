@@ -8,6 +8,7 @@ jobs:
       GitToken: ${{ secrets.ACCESS_TOKEN }}
     steps:
       - run: echo "${ProjectPath}"
+      - run: ls "${ProjectPath}"
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: ls "${ProjectPath}"
