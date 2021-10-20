@@ -24,7 +24,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "${ProjectPath}"
       - name: Set path
-        run: echo "${{ github.workspace }}" >> $GITHUB_PATH
+        run: echo "${{ github.workspace }}" >> $GITHUB_ENV
       - run: env
       - name: Run create
         run: create test-project
